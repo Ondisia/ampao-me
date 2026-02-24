@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Spline+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#0d69f2",
+                        "background-light": "#f5f7f8",
+                        "background-dark": "#101722",
+                        "accent-neon": "#a855f7",
+                    },
+                    fontFamily: {
+                        "display": ["Spline Sans", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "2xl": "1rem",
+                        "3xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        .glass-card {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .neon-glow {
+            box-shadow: 0 0 15px rgba(13, 105, 242, 0.4);
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 min-h-screen flex flex-col overflow-x-hidden">
+<div class="relative w-full max-w-[1200px] mx-auto flex h-full min-h-screen flex-col">
+<header class="flex items-center justify-between border-b border-white/10 px-6 py-4 lg:px-10">
+<div class="flex items-center gap-3">
+<div class="size-8 bg-primary rounded-lg flex items-center justify-center text-white">
+<span class="material-symbols-outlined text-2xl">payments</span>
+</div>
+<h2 class="text-xl font-bold tracking-tight">Digital Angpao</h2>
+</div>
+<div class="flex items-center gap-4">
+<button class="flex items-center justify-center rounded-lg h-10 w-10 bg-white/5 hover:bg-white/10 transition-colors">
+<span class="material-symbols-outlined text-slate-100">notifications</span>
+</button>
+<button class="flex items-center justify-center rounded-lg h-10 w-10 bg-white/5 hover:bg-white/10 transition-colors">
+<span class="material-symbols-outlined text-slate-100">settings</span>
+</button>
+<div class="h-10 w-10 rounded-full border-2 border-primary overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Small profile avatar of a high school student" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDpTm5xMdOLXZ0g8qkQJgl_G9LzFHSSNjW4zJI6udqVM3htaM-2vvhHlYPAS6nWxtFQscKPN6lp230bYsDnPqshf5wbD-zYI0YTMn6tBCcDPWBtgEgl4KuGdhSkt2SqeqkoHPs1aW_nS9uO4ujs1em709yzDyq5Odo0vCBbujyAWS0ywvLfGQfH6_-sDq4yn_Tcs8JrVsepmMrTD9-WYU1X0_60mA_18aMddRqjSo9939TwEEwJdlDN-5w9cu8qAxcC_Ng-ugld"/>
+</div>
+</div>
+</header>
+<main class="flex-1 flex flex-col items-center justify-center px-4 py-10 relative">
+<div class="absolute inset-0 z-0 opacity-10 pointer-events-none overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Subtle geometric neon background pattern" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD2XD7SiU1mX_rIThBLiSmRxa7NEnw1AkHBWTkQy_wHEL6JvkpsXHm24Cbq4rawOB7HW8ais0NxPRwbC3ntElJaq6DGGQwoe1kTFEo2oFeR9afeUETOaXUjqjqyb7Zs89EDI8jU7ypFamdIc-ZGWYz4RyzcW4qSp3mUHkGIq-OQ3-w7suS70eWXkMwdPcJrxgrq8ywOSmyXPGVgmy_lhgClHro3DCeGb6UthOvKpZJoHsCECfAlEWeoKV0tVaoKM727dAqX9AGg"/>
+</div>
+<div class="relative z-10 w-full max-w-2xl flex flex-col items-center gap-10">
+<div class="flex flex-col items-center text-center animate-fade-in">
+<div class="relative p-1 rounded-full bg-gradient-to-tr from-primary via-accent-neon to-primary neon-glow mb-6">
+<div class="bg-background-dark p-1 rounded-full">
+<div class="size-32 md:size-40 rounded-full overflow-hidden border-4 border-background-dark">
+<img class="w-full h-full object-cover" data-alt="Anime style profile avatar portrait of Akiro" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCL_4C2t4crH6sPUCI-omt7zbL-N0SMo5k1SUzrpiE0p19-iSLACylsWzkm5QtytnquHrXn-5w1E19gL74FPsM6P3TljMFV_heBwKHLeHgDnma1lSiLb0Oh3R2my5RwHy7XEhq5NMaGA0f_0E7YuNzDBQCGjPkdiWHFOMHcSOjQNqEEZ8hEJWnrshzuiEKW6dIM7N0qbnb_Wm7dLfXS5swZJo6Y5m39LJxfYLXnP-ae1pe0JnULB5-z8sJ5WQAxFbMNBEhcSiuf"/>
+</div>
+</div>
+<div class="absolute bottom-2 right-2 bg-green-500 size-6 rounded-full border-4 border-background-dark"></div>
+</div>
+<h1 class="text-3xl md:text-4xl font-bold text-white mb-2">Akiro</h1>
+<div class="flex flex-col gap-1">
+<span class="px-4 py-1 rounded-full bg-primary/20 text-primary text-sm font-semibold border border-primary/30">Siap Menerima Berkah!</span>
+<p class="text-slate-400 text-sm mt-2">High School Student Edition • Class 2-A</p>
+</div>
+</div>
+<div class="w-full glass-card rounded-3xl p-8 relative overflow-hidden group">
+<div class="absolute -top-24 -right-24 w-48 h-48 bg-primary/10 rounded-full blur-3xl group-hover:bg-primary/20 transition-all duration-500"></div>
+<div class="absolute -bottom-24 -left-24 w-48 h-48 bg-accent-neon/10 rounded-full blur-3xl group-hover:bg-accent-neon/20 transition-all duration-500"></div>
+<div class="flex flex-col md:flex-row items-center justify-between gap-6 relative z-10">
+<div class="flex flex-col gap-1 text-center md:text-left">
+<p class="text-slate-400 text-sm font-medium uppercase tracking-widest">Available Balance</p>
+<h2 class="text-3xl md:text-4xl font-bold text-white tracking-tight">Rp 150,000</h2>
+<p class="text-primary text-sm flex items-center justify-center md:justify-start gap-1 mt-1">
+<span class="material-symbols-outlined text-base">verified_user</span>
+                                Secure Glassmorphism Wallet
+                            </p>
+</div>
+<button class="w-full md:w-auto px-8 py-4 bg-primary hover:bg-primary/90 text-white font-bold rounded-2xl transition-all neon-glow flex items-center justify-center gap-2 group">
+<span class="material-symbols-outlined transition-transform group-hover:-translate-y-0.5">account_balance_wallet</span>
+                            Tarik Saldo
+                        </button>
+</div>
+</div>
+<div class="flex flex-col items-center gap-6 w-full max-w-sm">
+<div class="w-full p-6 glass-card rounded-3xl flex flex-col items-center border-dashed border-2 border-white/20">
+<div class="bg-white p-4 rounded-2xl mb-4">
+<img class="size-48 md:size-56 object-contain rounded-lg" data-alt="QRIS QR code for receiving digital angpao" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDEeBoAPpn3Zl7g5YBFbv-TNUmLSfqu64yTo81WDkqpMtSFD8YpZ9FThdTpuYPJlSMjpolAolQVRiHsgBQbWCUGVL2Ps6bVHUsN5ESJaLP7Zmk6dpLp-V3F8c_R2mElvQyW1Q935fIrWwbzJ8i0cvp3jiP-P5o4_CH8GSLFbdOZs2zPFMFT4aTkDvSymjkdqM-q5N428BkajkWqQq9SU2ad2KGIFfwP0vhgV0Qj7smEAX0Vqxc8qjlykwGflsdxHHb5WIURYBNF"/>
+</div>
+<div class="text-center">
+<p class="text-white font-semibold text-lg">Scan QR untuk Kirim Angpao</p>
+<p class="text-slate-400 text-sm">Supported by QRIS &amp; All Digital Wallets</p>
+</div>
+</div>
+</div>
+</div>
+</main>
+<footer class="w-full py-8 px-6 border-t border-white/10 mt-auto flex flex-col md:flex-row items-center justify-between gap-4">
+<div class="flex items-center gap-6">
+<a class="text-primary font-medium hover:text-white transition-colors flex items-center gap-2" href="#">
+<span class="material-symbols-outlined">home</span> Home
+                </a>
+<a class="text-slate-400 font-medium hover:text-white transition-colors flex items-center gap-2" href="#">
+<span class="material-symbols-outlined">history</span> History
+                </a>
+<a class="text-slate-400 font-medium hover:text-white transition-colors flex items-center gap-2" href="#">
+<span class="material-symbols-outlined">person</span> Profile
+                </a>
+</div>
+<p class="text-slate-500 text-xs">© 2024 Digital Angpao. Crafted for High Schoolers.</p>
+</footer>
+</div>
+</body></html>
